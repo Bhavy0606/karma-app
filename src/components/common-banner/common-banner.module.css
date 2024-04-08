@@ -1,0 +1,41 @@
+.bannerContainer {
+  background-image: url(/img/banner/common-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 45vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.fluidContainer {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 100px;
+}
+.pageInfo {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+.pageRoutes {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.pageRoutes label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.pageRoutes label:nth-child(2) {
+  font-size: 24px;
+  cursor: unset;
+}
