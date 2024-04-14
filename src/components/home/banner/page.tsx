@@ -1,7 +1,6 @@
 "use client";
-import SliderActionButton from "@/components/utils/buttons/SliderActionButton";
 import styles from "./banner.module.css";
-// import { Splide,}
+
 export default function Banner() {
   const AddIcon = (
     <>
