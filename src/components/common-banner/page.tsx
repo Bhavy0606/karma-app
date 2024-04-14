@@ -1,20 +1,18 @@
 "use client";
 import { usePathname } from "next/navigation";
-import styles from "./common-banner.module.css";
 import SmallBanner from "./small-banner/page";
-import LargeBanner from "./large-banner/page";
+import { AppRoutes } from "@/shared/models/common.enum";
 
 export default function CommonBanner() {
   const pathName = usePathname();
-  const pageName = pathName.split("/")[1];
 
-  // small banner
+  if (pathName !== AppRoutes.HOME) {
+    return (
+      <>
+        <SmallBanner />
+      </>
+    );
+  }
 
-  // large banner
-
-  return (
-    <>
-      <SmallBanner />
-    </>
-  );
+  return <></>;
 }

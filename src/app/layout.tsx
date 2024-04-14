@@ -3,7 +3,6 @@ import "./globals.css";
 import Header from "@/components/header/page";
 import CommonBanner from "@/components/common-banner/page";
 import SliderBanner from "@/components/slider-banner/page";
-
 export const metadata: Metadata = {
   title: "My First NextJS APP",
   description: "Create by Bhavy",
